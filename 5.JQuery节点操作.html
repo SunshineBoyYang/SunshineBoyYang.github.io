@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.nav{
+			background: green;
+		}
+		#list{
+			position: absolute;
+		}
+		.footer{
+			position: absolute;
+		}
+		#wrap{
+			width: 400px;
+			height: 400px;
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="nav">
+			<img src="img/xue.jpg" alt="">
+			<span>导航</span>	
+		</div>
+		<div class="content">
+			
+			<p>CSS hack是通过在CSS样式中加入一些特殊的符号，让不同的浏览器识别不同的符号（什么样的浏览器识别什么样的符号是有标准的，CSS hack就是让你记住这个标准），以达到应用不同的CSS样式的目的，比如.kwstu{width:300px;_width:200px;}，一般浏览器会先给元素使用width:300px;的样式，紧接着后面还有个_width:200px;由于下划线_width只有IE6可以识别，所以此样式在IE6中实际设置对象的宽度为200px，后面的把前面的给覆盖了，而其他浏览器不识别_width不会执行_width:200px;这句样式，所以在其他浏览器中设置对象的宽度就是300px;
+			以下是引自百度文库的定义</p>
+		</div>
+		<div class="footer">
+			<ol id="list">
+				<li><a href="">链接1</a></li>
+				<li><a href="">链接2</a></li>
+				<li><a href="">链接3</a></li>
+			</ol>
+		</div>
+	</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+	// 1, 创建节点
+	var aDiv = $("<div></div>");
+	aDiv.html("我是一个新的div");
+	aDiv.css({
+		background:"pink"
+	});
+	// 2,添加节点
+	// 2.1 把 aDiv 拼接到 .footer 里面
+	// $(".footer").append(aDiv);
+	// aDiv.appendTo($('.footer'));
+
+	// 2.2 prepend
+	// $(".footer").prepend(aDiv);
+	// aDiv.prependTo($(".footer"));
+
+
+	// 2.3  after
+	// $(".nav").after(aDiv);
+	// $("li").after(aDiv);
+	// aDiv.insertAfter($(".nav"));
+
+
+	// 2.4   before
+	// $(".nav").before(aDiv);
+	// aDiv.insertBefore($(".nav"));
+	// $("#wrap").append($("<div></div>"));
+
+	// 3, 设置属性
+	// $("#wrap").attr("title","yangshiqi");
+	// $("img").attr({
+	// 	title:"haha",
+	// 	src:""
+	// });
+
+	// 获取属性
+	// console.log($("img").attr("src"));
+
+
+	// 4,css() 设置或者返回匹配元素的样式属性
+	// $(".nav").css({
+	// 	height:"100px",
+	// 	background:"pink",
+	// 	border:"1px solid red"
+	// });
+	// console.log($(".nav").css("background"));
+
+
+	// 5, height() 设置或返回匹配元素的高度
+	//  只是获取或者设置盒模型的 height，不包含 padding
+	// $(".nav").height(300);
+	// $(".nav").css("height"); // 这个有 px
+	// console.log($(".nav").height());
+
+
+	// 6, width() 设置或返回匹配元素的宽度
+
+	// 7, offset() 返回第一个匹配元素相对于文档的位置
+	// console.log($(".footer").offset().top);
+
+	// 8, offsetParent() 返回最近的定位祖先元素
+	// console.log($("#list").offsetParent());
+
+	// 9, position() 返回第一个匹配元素相对于定位父元素的位置
+	// console.log($("li").position().top);
+
+	// 10, scrollLeft()  设置或返回匹配元素相对滚动条左侧的偏移
+	// 11, scrollTop()   设置或返回匹配元素相对滚动条顶部的偏移
+	// setTimeout(function(){
+	// 	console.log($("#wrap").scrollTop());
+	// },2000);
+
+	// 设置滑动初始位置
+	// $("wrap").scrollTop(100);
+
+
+
+</script>
+</html>

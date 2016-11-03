@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ready</title>
+</head>
+<body>
+	
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+
+	// JQ 里面的 ready 方法，。实际是对 DOMContentLoaded 的一个封装
+	$(document).ready(function() {
+		console.log("ready1");	
+	});
+	$(document).ready(function() {
+		console.log("ready2");	
+	});
+	$(document).ready(function() {
+		console.log("ready3");	
+	});
+	window.onload = function(){
+		console.log("onload1");
+		console.log("onload2");
+	}
+	window.onload = function(){
+		console.log("onload3");
+	}
+	$(function(){
+		console.log("ready简化写法");
+	});
+	
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

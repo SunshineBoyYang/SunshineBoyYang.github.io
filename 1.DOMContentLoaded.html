@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+	// DOMContentLoaded 和 onload 类似，但是 onload 代表的是页面全部加载完毕包括：图片的加载、link引入的外部css文件、script引入的外部 js 文件等；
+	// DOMContentLoaded 代表 DOM 加载完毕也就是 html 加载完毕，不包括图片等的加载
+	window.addEventListener("DOMContentLoaded",function(){
+		console.log("DOMContentLoaded");
+	},false);
+	window.onload = function(){
+		console.log("onload");
+	}
+</script>
+</html>

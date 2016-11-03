@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="wrap">
+		<div class="topDiv">
+			<p>fidsajkf</p>
+			<p title="bcd">sdafjadfsjkdj</p>
+			<ul id="list">
+				<li class="opition">选项1</li>
+				<li class="opition" title="哈哈">选项2</li>
+				<li class="opition" >选项3</li>
+			</ul>
+		</div>
+		<div class="bottomDiv" title="嘿嘿">
+			<p class="opition" title="bottom">fidsajkf</p>
+			<p>sdafjadfsjkdj</p>
+			<p title="呵呵"></p>
+		</div>
+	</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+	/*基本选择器*/
+	// console.log($("wrap"));
+
+	// id 选择器
+	// 设置单个样式
+	// $("wrap").css("background","red");
+
+	// 设置多个样式
+	// $("#wrap").css({
+	// 	background:"pink",
+	// 	width:"100px",
+	// 	height:"100px"
+	// });
+
+
+	// 2,class 选择器
+	// $(".topDiv").css({
+	// 	border: '1px solid green',
+	// 	width:"200px",
+	// 	height:"200px"
+	// });
+
+	// $("li").css({
+	// 	border: '1px solid red',
+	// 	width:"100px",
+	// 	height:"100px"
+	// });
+
+	// 3,element 选择器
+	// $("p").css("border","5px solid pink");
+
+	// 4, *选择器
+	// $("*").css("border","1px solid red");
+
+	// 5,组合选择器
+	// $("#list,.bottomDiv,p").css("border","1px solid yellow");
+
+	// 6,后代选择器
+	// 选择 class 名为 bottomDiv 下的所有 p 标签
+	// $(".bottomDiv p").css("border","1px solid red");
+
+	// 7,$(“parent>child”)   >只找子集，不找孙集
+	// $(".topDiv>p").css({
+	// 	width: '200px',
+	// 	border:"1px solid red"
+	// });
+
+	// 8,$(“prev+next”) 选取紧接在prev元素后的next元素
+	// 选择 id 为 #li1 的下一个class 名为 opition 的同辈元素
+
+
+	// 9, $(“prev~siblings”) 匹配所有元素选取prev元素之后的所有siblings元素
+	// $(".topDiv~div").css({
+	// 	border: '1px solid red'
+	// });
+
+
+	// 基本过滤选择器
+	// 1, :first 选取第一个元素
+	// 2, :last  选取最后一个元素
+	// 3, :not(selector)  去除所有与给定选择器匹配的元素
+	// 4,  :even  匹配所有元素选取索引是偶数的所有元素，索引从0开始
+	// $("p:even").css({ // 给所有 p 标签编号为偶数，编号是从 0 开始的
+	// 	border:"1px solid red"
+	// });
+
+	// 5, :odd  选取索引是奇数的所有元素，索引从0开始 奇数
+
+	// 6, :eq(index)  选取索引等于index的元素(index从0开始)
+	// $("li:eq(1)").css();
+
+	// 7, :gt(index)  选取索引大于index的元素(index从0开始)
+	// $("li:gt(1)").css();  // 不包括 1
+
+	// 8, :lt(index)  选取索引小于index的元素(index从0开始)
+
+	// 9, next()  选取紧邻的下一个同级元素
+	// $(".topDiv").next().css("","");
+	// 10, prev()  选取紧邻的上一个同级元素
+
+	// 内容过滤选择器
+	// 10, :contains(text)  选取含有文本内容为“text”的元素
+	// $("*:contains('选项2')").css({
+	// 	border:"1px solid red"
+	// });
+
+	// 11, :empty  选取不包含子元素或者文本的空元素(必须为空，没有空格等)
+	// console.log($("*:empty"));
+
+	// 12, :has(selector)  选取含有选择器所匹配的元素的元素
+	// $("div:has(ul)").css({ // 选取 div 下含有 ul 的元素
+	// 	border:"1px solid red"
+	// });
+
+
+	// 13, :parent  选取含有子元素或者文本的元素
+	// $("p:parent").css({
+	// 	border:"1px solid red"
+	// });
+
+	// 属性过滤选择器
+	// 1,选择含有属性为 id 的所有元素
+	// $("*[id]").css({
+	// 	border:"1px solid green"
+	// });
+
+	// 2,[attr=value] 选取属性的值为value的元素
+	// $("div[title=嘿嘿]").css({
+	// 	border:"1px solid green"
+	// });
+
+	// 3, [attr!=value]  选取属性的值不等于value的元素
+	// $("div[title!=嘿嘿]").css({
+	// 	border:"1px solid green"
+	// });
+
+	// 4, [attr^=value] 选取属性的值以value开始的元素
+	// $("p[title^=b]").css({
+	// 	border:"1px solid green"
+	// });
+
+	// 5, [attr$=value] 选取属性的值以value结束的元素
+	// $("p[title$=m]").css({
+	// 	border:"1px solid green"
+	// });
+
+	// 6, [attr*=value] 选取属性的值含有value的元素
+	// $("*[class*=o]").css({ // 选取 class 含有 o 的所有元素
+	// 	border:"1px solid green"
+	// });
+
+	// 7,[attr1][attr2][attrN]  选择满足所有属性选择器的元素
+	// $("p[class*=o][title^=b][title$=m]").css({
+	// 	border:"1px solid green"
+	// });
+
+
+	// 子元素过滤选择器
+	// 1,:nth-child(index/even/odd)  选取每个父元素下的第index个或者奇偶元素。index从1开始
+	// $("li:nth-child(1)").css({
+	// 	border:"1px solid green"
+	// });
+
+	// 2, :first-child  选取每个父元素的第一个子元素
+
+	// 3, :last-child  选取每个父元素的最后一个子元素
+
+	// 4, :only-child  如果某个元素是它父元素中唯一的子元素，那么将会被匹配。
+
+
+	// first-child与：first的区别
+	// nth-child(index)与：eq(index)的区别
+	//  		1 开始的       0开始
+	// nth-child(表达式)的应用
+
+
+
+
+
+
+
+</script>
+</html>
