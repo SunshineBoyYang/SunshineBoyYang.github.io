@@ -1,0 +1,367 @@
+#music_logo{
+	width: 40px;
+	height: 40px;
+	background: rgb(255,50,101);
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	text-align: center;
+	line-height: 60px;
+}
+#music_logo img{
+	width: 32px;
+	height: 32px;
+	z-index: 1;
+}
+#navigation{
+	list-style: none;
+	position: fixed;
+	width: 100%;
+	height: 20px;
+	/*background: red;*/
+	/*display: none;*/
+	font-size: 16px;
+	text-align: center;
+	margin-top: 35px;
+	opacity: 1;
+}
+#navigation a{
+	margin-left: 25px;
+	margin-right: 40px;
+	text-decoration: none;
+}
+#navigation a span{
+	color: rgb(127,135,146);
+}
+#navigation a span:hover{
+	color: rgb(255,50,101);
+}
+#make{
+	width: 99.5%;
+	height: 1000px;
+	/*border: 1px solid saddlebrown;*/
+	position: relative;
+	top: 100px;
+}
+#make_con{
+	/*border: 1px solid saddlebrown;*/
+	position: absolute;
+	/*top: 1%;*/
+	width: 95%;
+	height: 0;
+	right: 0;
+	padding-top: 37%;
+}
+#make_con>div{
+	display: inline-block;
+}
+#make_left{
+	margin-left: 5%;
+	position: absolute;
+	bottom: 0;
+}
+#make_left>div:nth-child(3){
+	margin-top: 50px;
+}
+#left_img{
+	background: url(../img/max_left.png);
+	width: 230px;
+	height: 150px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#left_font span{
+	font-weight: normal;
+	line-height: 30px;
+}
+#left_font>span:nth-child(1){
+	font-size: 15px;
+}
+#left_font>span:nth-child(2){
+	font-size: 20px;
+}
+#left_font>span:nth-child(3){
+	font-size: 15px;
+}
+#left_font>span:nth-child(5){
+	font-size: 13px;
+	color: rgb(169,169,169);
+}
+#make_start{
+	width: 130px;
+	height: 35px;
+	background: rgb(255,50,101);
+	font-size: 14.5px;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	font-weight: normal;
+	cursor: pointer;
+	letter-spacing: 1px;
+	float: left;
+	border-radius: 3px;
+	-webkit-user-select: none;
+}
+#make_start:hover{
+	background: rgb(244,33,86);
+}
+#make_more{
+	width:63px;
+	height: 30px;
+	border-bottom: 1px solid rgb(135,135,135);
+	float: left;
+	font-size: 13.5px;
+	text-align: center;
+	line-height: 33px;
+	color: rgb(135,135,135);
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-left: 30px;
+	-webkit-user-select: none;
+}
+#make_more:hover{
+	color: rgb(173,173,173);
+}
+
+#make_right{
+	width: 63%;
+	height: 0;
+	/*border: 1px solid seagreen;*/
+	margin-right: 0;
+	position: absolute;
+	right: 0;
+	padding-bottom: 35%;
+	top: 230px;
+}
+#right_one{
+	position: relative;
+	width: 70%;
+	height: 0;
+	padding-top: 50%;
+	border: 2px solid white;
+	border-radius: 20px;
+	left: 14%;
+	transform: translate(0px,10%,0px);
+}
+#right_one .top{
+	width: 100%;
+	height: 0;
+	padding-top: 6%;
+	background: rgb(239,239,239);
+	position: absolute;
+	top: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+#right_one .top>p{
+	width: 0.9%;
+	height: 0;
+	background: rgb(204,204,204);
+	position: absolute;
+	padding-top: 0.9%;
+	top: 40%;
+	left: 48%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px white;
+}
+#right_one .screen{
+	width: 100%;
+	height: 0;
+	padding-top: 60%;
+	/*border: 1px solid saddlebrown;*/
+	position: absolute;
+	top: 8%;
+	background: url(../img/lisa_1.jpg);
+	background-size: cover;
+}
+#right_one .screen>p:nth-child(1){
+	width: 6%;
+	height: 0;
+	padding-top: 60%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(239,239,239);
+}
+#right_one .screen>p:nth-child(2){
+	width: 6%;
+	height: 0;
+	padding-top: 60%;
+	background: rgb(239,239,239);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#right_one .bottom{
+	width: 100%;
+	height: 0;
+	padding-top: 5.6%;
+	position: absolute;
+	top: 92%;
+	background: rgb(239,239,239);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+#right_two{
+	width: 20%;
+	height: 0;
+	padding-top: 39%;
+	border: 2px solid white;
+	position: absolute;
+	top: 22%;
+	border-radius: 15px;
+}
+#right_two .top{
+	width: 100%;
+	height: 0;
+	padding-top: 27%;
+	/*border: 1px solid lawngreen;*/
+	position: absolute;
+	top: 0;
+	background: rgb(239,239,239);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#right_two .top>p:nth-child(1){
+	width: 2.5%;
+	height: 0;
+	padding-top: 2.5%;
+	background: rgb(204,204,204);
+	border-radius: 50%;
+	position: absolute;
+	top: 30%;
+	left: 48%;
+	box-shadow: 1px 1px 5px white;
+}
+#right_two .top>p:nth-child(2){
+	width: 22%;
+	height: 0;
+	padding-top: 2.5%;
+	/*border: 1px solid saddlebrown;*/
+	background: rgb(204,204,204);
+	position: absolute;
+	top: 50%;
+	left: 39%;
+	border-radius: 5px;
+}
+#right_two .screen{
+	width: 100%;
+	height: 0;
+	padding-top: 140%;
+	/*border: 1px solid sandybrown;*/
+	position: absolute;
+	top: 13.7%;
+	background-image: url(../img/lisa_2.jpg);
+	background-size: cover;
+}
+#right_two .screen>p:nth-child(1){
+	width: 5%;
+	height: 0;
+	padding-top: 140%;
+	position: absolute;
+	/*border: 1px solid skyblue;*/
+	top: 0;
+	background: rgb(239,239,239);
+}
+#right_two .screen>p:nth-child(2){
+	width: 5%;
+	height: 0;
+	padding-top: 140%;
+	position: absolute;
+	/*border: 1px solid skyblue;*/
+	top: 0;
+	right: 0;
+	background: rgb(239,239,239);
+}
+#right_two .bottom{
+	width: 100%;
+	height: 0;
+	padding-top: 29%;
+	background: rgb(239,239,239);
+	position: absolute;
+	top: 85%;
+	/*border: 1px solid saddlebrown;*/
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+#right_two .bottom>p{
+	width: 18%;
+	height: 0;
+	padding-top: 18%;
+	border-radius: 50%;
+	border: 2px solid white;
+	position: absolute;
+	top: 14%;
+	left: 40%;
+}
+#right_three{
+	width: 30%;
+	height: 0;
+	padding-top: 47%;
+	border: 2px solid white;
+	position: absolute;
+	top: 10%;
+	right: 0;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	overflow: hidden;
+}
+#right_three .top{
+	width: 100%;
+	height: 0;
+	padding-top: 22%;
+	/*border: 1px solid lightblue;*/
+	position: absolute;
+	top: 0;
+	background: rgb(239,239,239);
+}
+#right_three .top>p{
+	width: 2.2%;
+	height: 0;
+	padding-top: 2.2%;
+	/*border: 1px solid saddlebrown;*/
+	background: rgb(204,204,204);
+	position: absolute;
+	top: 40%;
+	left: 53%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px white;
+}
+#right_three .screen{
+	width: 100%;
+	height: 0;
+	padding-top: 112%;
+	background: url(../img/lisa_3.jpg);
+	background-size: cover;
+	position: absolute;
+	/*border: 1px solid lightgreen;*/
+	top: 14%;
+}
+#right_three .screen>p:nth-child(1){
+	width: 6%;
+	height: 0;
+	padding-top: 112%;
+/*	border: 1px solid lightpink;*/
+	position: absolute;
+	top: 0;
+	background: rgb(239,239,239);
+}
+#right_three .bottom{
+	width: 100%;
+	height: 0;
+	padding-top: 22.7%;
+	/*border: 1px solid skyblue;*/
+	position: absolute;
+	top: 85.5%;
+	background: rgb(239,239,239);
+}
+#right_three .bottom>p{
+	width: 14%;
+	height: 0;
+	padding-top: 14%;
+	border: 2px solid white;
+	position: absolute;
+	top: 20%;
+	border-radius: 50%;
+	left: 47%;
+}
